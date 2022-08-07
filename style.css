@@ -1,0 +1,106 @@
+/******************************************************************************
+CSS for the R4Epi textbook
+******************************************************************************/
+
+/*
+CSS that came with bookdown
+*/
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+/* 
+Font Styles
+*/
+.large-bold {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.red-text {
+  color: red;
+}
+
+.code {
+  color: #0365C0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+/*
+Note styles
+*/
+.note {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #f0f7fb;
+  border: solid 1px #3498db;
+  border-radius: 6px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 15px 15px;
+}
+
+.warning {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #FEFBEA;
+  border: solid 1px #F2E394;
+  border-radius: 6px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 15px 15px;
+}
+
+
+/* 
+Text box with construction stripes for chapters under construction.
+Helpful websites: 
+https://css-tricks.com/stripes-css/
+https://stackoverflow.com/questions/10422949/css-background-opacity
+*/
+.under-construction {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  /*background-color: rgba(248, 116, 49, 0.4);*/ /* Fourth number is opacity */
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(248, 116, 49, 0.1) /* Fourth number is opacity */,
+    rgba(248, 116, 49, 0.1) 10px,
+    rgba(169, 169, 169, 0.15) 10px,
+    rgba(169, 169, 169, 0.15) 20px
+  );
+  border: solid 1px #F87431;
+  border-radius: 6px;
+  line-height: 26px;
+  overflow: hidden;
+  padding: 15px 15px;
+  font-size: 24px;
+}
+
+
+/*
+Disable the title header from the index page.
+https://stackoverflow.com/questions/53399095/disable-title-author-in-the-html-output-of-bookdown
+*/
+#header {
+    display: none;
+}
+
+
+
